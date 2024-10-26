@@ -10,3 +10,19 @@ if s1.count >= 1 && s1.count <= 50 {
         }
     }
 }
+ /*
+1)
+    print(String(repeating: s1, count: a))
+
+2)
+for _ in 1...a {
+    print(s1, terminator : "")
+}
+
+3) 
+var str = ""
+
+for _ in 1...a{
+    str += s1
+}
+*/
