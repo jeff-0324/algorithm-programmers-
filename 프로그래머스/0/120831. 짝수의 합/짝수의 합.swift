@@ -10,3 +10,18 @@ func solution(_ n:Int) -> Int {
     }
     return sum
 }
+
+/* other solution
+1. 클로저을 활용하며, 필터를 이용해 조건걸러서 걸러진 값을 reduce로 모두 합함
+func solution(_ n: Int) -> Int { (0...n).filter { $0 % 2 == 0 }.reduce(0, +) }
+
+2. where을 이용한 조건 생성
+func solution(_ n:Int) -> Int {
+    var result = 0
+    for i in 1...n where i % 2 == 0 {
+        result += i
+    }
+    return result
+}
+
+*/
