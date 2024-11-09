@@ -8,3 +8,6 @@ func solution(_ arr:[Int]) -> Double {
     avg = Double(sum) / Double(arr.count)
     return avg
 }
+
+// other solution
+// return Double(arr.reduce(0,+))/Double(arr.count)
