@@ -10,3 +10,24 @@ func solution(_ n:Int) -> Int {
     }
     return array.first!
 }
+
+/* other solution
+func solution(_ n:Int) -> Int {
+    var count = 1
+    while true {
+        if (n % count) == 1 {
+            break
+        }
+        count += 1
+    }
+
+    return count
+}
+
+func solution(_ n:Int) -> Int {
+    return (1...n).filter{n % $0 == 1}.min()!
+}
+
+
+
+*/
