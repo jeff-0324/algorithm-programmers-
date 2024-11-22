@@ -8,3 +8,6 @@ func solution(_ seoul:[String]) -> String {
     }
     return "김서방은 \(count - 1)에 있다"
 }
+
+// func solution(_ seoul:[String]) -> String {
+//    return (seoul.firstIndex(of: "Kim")!) }
