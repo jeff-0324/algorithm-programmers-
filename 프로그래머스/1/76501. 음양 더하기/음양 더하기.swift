@@ -8,3 +8,11 @@ func solution(_ absolutes:[Int], _ signs:[Bool]) -> Int {
     }
     return resultArray.reduce(0, +)
 }
+
+/* other solution
+func solution(_ absolutes:[Int], _ signs:[Bool]) -> Int {
+    zip(absolutes, signs)
+        .map { $1 ? $0 : -$0 }
+        .reduce(0, +)
+}
+*/
