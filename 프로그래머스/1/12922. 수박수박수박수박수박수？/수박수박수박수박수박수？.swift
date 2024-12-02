@@ -10,3 +10,15 @@ func solution(_ n:Int) -> String {
     }
     return result
 }
+
+/*
+func solution(_ n:Int) -> String {
+    var str = ""
+
+    for i in 1...n {
+        str += i % 2 == 1 ? "수" : "박"
+    }
+
+    return str
+}
+*/
