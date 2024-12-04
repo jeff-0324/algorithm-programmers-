@@ -1,11 +1,23 @@
-import Foundation
-
-func solution(_ s:String) -> Bool
-{
-    var ans:Bool = false
+func solution(_ s:String) -> Bool {
+    var stack:[Character] = []
+    var count = 0
     
-    // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-    print("Hello Swift")
-
-    return ans
+    for char in s {
+        if char == "(" {
+            stack.append(char)
+            count += 1
+        } else if char == ")" {
+            if stack.isEmpty {
+                return false
+            }
+            stack.popLast()
+            count -= 1
+        }
+    }
+    
+    if count == 0 {
+        return true
+    } else {
+        return false
+    }
 }
